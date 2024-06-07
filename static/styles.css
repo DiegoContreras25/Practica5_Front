@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('Film.css');
+@import url('Filter.css');
+@import url('Modal.css');
+@import url('Projects.css');
+
+/* Estilos de la MainPage */
+
+.Title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.Film_All {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 1.5rem;
+  padding: 2rem;
+  background-color: #ecf0f1;
+}
+
+.Film_All .Film_container {
+  border: 2px solid #bdc3c7;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Film_All .Film_container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Film_All .Film_container .FilmData {
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Film_All .Film_container .FilmData .FilmBrand {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+}
+
+.Film_All .Film_container .FilmData .FilmName {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+.Film_All .Film_container .FilmData img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.Film_All a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.ModalButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.ModalButton button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ModalButton button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.ProjectsButton, .BackButton {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #3498db;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ProjectsButton:hover, .BackButton:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.SingleFilmImage {
+  width: 25%;
+  height: auto;
+  border-radius: 0.5rem;
+}
